@@ -1,7 +1,13 @@
 Leaflet Rotated Marker
 ===
 
-Enables rotation of marker icons in Leaflet. [Demo](http://bbecquet.github.io/Leaflet.RotatedMarker/example.html)
+Enables rotation of marker icons in Leaflet. [Demo](http://bbecquet.github.io/Leaflet.RotatedMarker/example.html).
+
+Marker icons are rotated clockwise/counterclockwise in order to reach the desired angle using as little rotation as possible.
+This is especially important when CSS transitions is used on the icon in order to achieve a smooth transition/animation when moving/rotating the marker e.g.
+```js
+$(myMarker).css("transition", "transform 0.25s linear");
+```
 
 Compatible with versions 0.7.* and 1.* of Leaflet. Doesn't work on IE < 9.
 
